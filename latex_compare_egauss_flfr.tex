@@ -1,0 +1,18 @@
+\begin{table*}[!ht]
+  \centering
+  \caption{Comparison of {eGauss+FR} and {FL-FRT}  for 10 clients.}
+  \begin{tabular}{l|cc|cc|cc|cc}
+    \toprule
+    \multirow{2}{*}{Dataset} & \multicolumn{2}{c}{RMSE} & \multicolumn{2}{c}{NRMSE} & \multicolumn{2}{c}{$R^2$} & \multicolumn{2}{c}{$t$/sample [ms]} \\
+    & {eGauss+FR} & FL-FRT & {eGauss+FR} & FL-FRT & {eGauss+FR} & FL-FRT & {eGauss+FR} & FL-FRT \\
+    \midrule
+    \texttt{Friedman} & 2.580 & \textbf{2.291} & 0.093 & \textbf{0.083} & 0.730 & \textbf{0.787} & \textbf{0.198} & 1.091 \\
+    \texttt{HousingData} & \textbf{5.419} & 8.089 & \textbf{0.124} & 0.186 & \textbf{0.654} & -0.067 & \textbf{0.088} & 8.857 \\
+    \texttt{Mortgage} & \textbf{0.117} & 0.430 & \textbf{0.009} & 0.031 & \textbf{0.999} & 0.979 & \textbf{0.124} & 52.803 \\
+    \texttt{Random} & \textbf{0.101} & 1.252 & \textbf{0.002} & 0.019 & \textbf{1.000} & 0.983 & \textbf{3.869} & 17.653 \\
+    \texttt{Synthetic} & \textbf{0.032} & 0.353 & \textbf{0.019} & 0.204 & \textbf{0.995} & 0.400 & 0.280 & \textbf{0.182} \\
+    \texttt{Treasury} & \textbf{0.238} & 0.634 & \textbf{0.015} & 0.039 & \textbf{0.995} & 0.958 & \textbf{0.140} & 69.060 \\
+    \texttt{Weather} & \textbf{1.218} & 1.394 & \textbf{0.022} & 0.025 & \textbf{0.993} & 0.990 & \textbf{0.092} & 4.851 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
